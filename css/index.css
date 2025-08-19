@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.corPreto {
+   background-image: linear-gradient(to right top, #0e9601, #0f700f, #113a09, #034d07, #000000) !important;
+}
+
+.corPreto a {
+    color: aliceblue;
+}
+
+.corPreto a:hover {
+  color: rgb(87, 168, 84);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#pagina1{
+    width: 100vh;
+    height: auto;
+   
+}

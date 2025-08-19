@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 1 - Display</title>
+    <link rel="stylesheet" href="../../framework/bootstrap-5.3.7-dist/css/bootstrap.min.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.corPreto {
+   background-image: linear-gradient(to right top, #0e9601, #0f700f, #113a09, #034d07, #000000) !important;
+}
+
+.corPreto a {
+    color: aliceblue;
+}
+
+.corPreto a:hover {
+  color: rgb(87, 168, 84);
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#pagina1{
+    width: 100vh;
+    height: auto;
+   
+}
+
+
+    </style>
+</head>
+<body>
+       <!-- CABEÇALHO DA PÁGINA -->
+    <header>
+        <div id="cabeçalho">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary corPreto">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Projetos</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation" style="color: rgb(6, 207, 6);">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#">Principais projetos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Projetos futuros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  " aria-disabled="true">Em construção</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+
+<script src="../../framework/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
