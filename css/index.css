@@ -17,6 +17,10 @@
   color: rgb(87, 168, 84);
 }
 
+.corPreto a:active{
+    color: lightgreen;
+}
+
 body{
     overflow-x: hidden;
 }
@@ -25,4 +29,7 @@ body{
     width: 100vh;
     height: auto;
    
+}
+.corPreto a:focus{
+    color: cadetblue;
 }
