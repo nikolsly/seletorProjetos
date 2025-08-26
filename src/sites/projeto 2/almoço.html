@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Starbucks — Menu de Almoço</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #ffffff;
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        header {
+            background: #006241;
+            color: #fff;
+            padding: 18px 0;
+            text-align: center;
+        }
+    
+        header img {
+            width: 60px;
+            height: auto;
+        }
+    
+        h1 {
+            font-size: 1.6rem;
+            margin: 10px 0 0;
+        }
+    
+        .section-title {
+            color: #006241;
+            font-weight: 700;
+            text-align: center;
+            margin: 36px 0 20px;
+        }
+    
+        .card.sbx {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, .08);
+            background: #006241;
+            color: #fff;
+            transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
+            height: 100%;
+        }
+    
+        .card.sbx:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 26px rgba(0, 0, 0, .12);
+        }
+    
+        .card.sbx .thumb {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+    
+        .card.sbx .card-body {
+            padding: 18px;
+        }
+    
+        .card.sbx .card-title {
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+    
+        .card.sbx .badge {
+            background: #fff;
+            color: #006241;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: .35rem .6rem;
+            margin-bottom: 8px;
+        }
+    
+        .card.sbx .desc {
+            opacity: .95;
+        }
+    
+        .sbx-note {
+            font-size: .9rem;
+            color: #666;
+            text-align: center;
+            margin-top: 8px;
+        }
+    
+        footer {
+            margin: 36px 0 24px;
+            text-align: center;
+            color: #777;
+            font-size: .95rem;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #006241; padding: 0.3rem 1rem;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                <img src="https://img.icons8.com/fluency/48/starbucks.png" alt="Logo" width="30" height="30" class="me-2">
+                Starbucks
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./projeto2.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        
+        <h1>Menu de Almoço</h1>
+    </header>
+    <main class="container py-4">
+
+        <!-- SALGADOS -->
+        <h2 class="section-title">Salgados</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Pão de Queijo -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t1.6435-9/70489355_2946739962009981_6270712815493840896_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xVQBB_z3UekQ7kNvwHYMNp0&_nc_oc=Adls9AsfOF3KYoR4CyLFciUX2lK1VXGycfFWDdlAKF81cUGePlaF16zHzewptSESPRo&_nc_zt=23&_nc_ht=scontent.fcpq4-1.fna&_nc_gid=ZUhFOJnk26jMT5bfclQEPQ&oh=00_AfUtHcJaMO5UPjYTaBwJ9NJa5gzdGIp1F-GRMZ2smEVrDw&oe=68D4FE4A"
+                        alt="Pão de Queijo">
+                    <div class="card-body">
+                        <div class="badge">Clássico</div>
+                        <h5 class="card-title">Pão de Queijo</h5>
+                        <p class="desc mb-0">Receita com seis ingredientes, queijo produzido e curado especialmente.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Mini Pão de Queijo -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/482238760_24030197433237594_955694654143565277_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=127cfc&_nc_ohc=xlvTlzoaJEoQ7kNvwHkCAL1&_nc_oc=Admtdg8EaFqUbmytdDO-Z7Pn4YKW-i7lLF2xBTLOHtupf5RGVABSzfHV7c6bbb2iLd4&_nc_zt=23&_nc_ht=scontent.fcpq4-1.fna&_nc_gid=zQMgaIeBJybSIO8tb-ZJTw&oh=00_AfUUargKl3qSwClP9lPOBZNhtHM3PoOSZogJlXKiUPG9JQ&oe=68B35C6E"
+                        alt="Mini Pão de Queijo">
+                    <div class="card-body">
+                        <div class="badge">Para compartilhar</div>
+                        <h5 class="card-title">Mini Pão de Queijo (10 un.)</h5>
+                        <p class="desc mb-0">Versão mini do clássico — ideal para dividir.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Coxinha -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/487444623_24151820474408622_3796129554651182238_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=fTtsv_1Jd-YQ7kNvwGwHxSI&_nc_oc=Adkpi-80ikmd0F76P976oz7J1MRhH6N68Wo-ihpr2gVKlDTO06If5UC7tN5WGgM8K2s&_nc_zt=23&_nc_ht=scontent.fcpq4-1.fna&_nc_gid=nzBV9snioprNOG0CD3vycA&oh=00_AfWP0czCCvb3dt9QihYX2B5LZcAsBqhtcOmq_ZqKHS4Efw&oe=68B37DF0"
+                        alt="Coxinha de Frango com Requeijão">
+                    <div class="card-body">
+                        <div class="badge">Queridinha</div>
+                        <h5 class="card-title">Coxinha de Frango com Requeijão</h5>
+                        <p class="desc mb-0">Recheio cremoso de frango e requeijão, massa crocante.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Croissant (base) -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://scontent.fbfh1-2.fna.fbcdn.net/v/t39.30808-6/516754385_24914120031511992_7957501670294267785_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=Ir2OSG2VUTQQ7kNvwEkzyUp&_nc_oc=AdnwEYxxBd3uE-dG5VZRBv8kVOXEffWNfOnWjY7u6wuJqk23mAMw7k76FGx9NYficD0&_nc_zt=23&_nc_ht=scontent.fbfh1-2.fna&_nc_gid=wN9jOmegWqf9t1C99vEA7A&oh=00_AfXh8ktufzXyvPxQBqD5Ftyo8dPOUT7LcLfcPMnJ0iaGCg&oe=68B371B8"
+                        alt="Croissant">
+                    <div class="card-body">
+                        <div class="badge">Camadas macias</div>
+                        <h5 class="card-title">Croissant</h5>
+                        <p class="desc mb-0">Manteigado e dourado; opções recheadas: Presunto & Queijo, Frango, ou Peru
+                            & Cream Cheese.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SANDUÍCHES -->
+        <h2 class="section-title">Sanduíches</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Toast de Queijo -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://scontent.fcpq4-1.fna.fbcdn.net/v/t39.30808-6/509048375_24791737050416958_5546166571166821205_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0b6b33&_nc_ohc=EaiVYHigz84Q7kNvwF7XyMJ&_nc_oc=AdkcyGg1ZEf4oux-RGT4uoTYijC9D_K4JG_xARhkOzqp9lJCH8H7pDckXqHTunpEZUw&_nc_zt=23&_nc_ht=scontent.fcpq4-1.fna&_nc_gid=NWidl5o4o1zfmPuwbXal1A&oh=00_AfV3VIdyjl_jkwUbsRSNhAwn8D6gLF4W4d6PCpg91Ol5Xw&oe=68B38510"
+                        alt="Toast de Queijo">
+                    <div class="card-body">
+                        <div class="badge">Clássico</div>
+                        <h5 class="card-title">Toast de Queijo</h5>
+                        <p class="desc mb-0">Pão de forma, muçarela e manteiga.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Bagel americano -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb" src="http://casadacaubi.com.br/wp-content/uploads/2017/07/1-e1500474435420.jpg"
+                        alt="Toast de Peru e Queijo">
+                    <div class="card-body">
+                        <div class="badge">Tradicional</div>
+                        <h5 class="card-title">Bagel americano</h5>
+                        <p class="desc mb-0">preparado no pão bagel com gergelim, o Bagel Americano traz recheio de
+                            presunto cozido, ovo estrelado, tomate confit e queijo muçarela.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Toast de Presunto e Queijo -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="http://casadacaubi.com.br/wp-content/uploads/2017/07/3-e1500474445220.jpg"
+                        alt="Toast de Presunto e Queijo">
+                    <div class="card-body">
+                        <div class="badge">Tradicional</div>
+                        <h5 class="card-title">Sanduíche Gourmet de Costela</h5>
+                        <p class="desc mb-0">montado no pão rústico, este sanduíche leva costela bovina cozida
+                            lentamente, desfiada e acompanhada de queijo prato, molho campanha e queijo cremoso com
+                            mostarda dijon. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="sbx-note">Imagens ilustrativas. Os itens podem variar por loja e disponibilidade.</p>
+    </main>
+
+    <footer>© 2025 Starbucks Coffee Company — Menu ilustrativo para uso educativo</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
