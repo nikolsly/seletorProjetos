@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Auto Car — Menu de Carros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="starbucks.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="CarAuto.png" type="image/x-icon">
+    <style>
+        body {
+            background: #ffffff;
+            color: #333;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background: linear-gradient(90deg, rgba(10, 4, 94, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%) !important;
+            color: #fff;
+            padding: 18px 0;
+            text-align: center;
+        }
+
+        header img {
+            width: 60px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 1.6rem;
+            margin: 10px 0 0;
+        }
+
+        
+        .section-title {
+            color: #2c45d4;
+            font-weight: 700;
+            text-align: center;
+            margin: 36px 0 20px;
+        }
+
+        .card.sbx {
+            border: none;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 22px rgba(0, 0, 0, .08);
+            background: #030566;
+            color: #fff;
+            transition: transform .15s ease-in-out, box-shadow .15s ease-in-out;
+            height: 100%;
+        }
+
+        .card.sbx:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 26px rgba(0, 0, 0, .12);
+        }
+
+        .card.sbx .thumb {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card.sbx .card-body {
+            padding: 18px;
+        }
+
+        .card.sbx .card-title {
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .card.sbx .badge {
+            background: #fff;
+            color: #006241;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: .35rem .6rem;
+            margin-bottom: 8px;
+        }
+
+        .card.sbx .desc {
+            opacity: .95;
+        }
+
+        .sbx-note {
+            font-size: .9rem;
+            color: #666;
+            text-align: center;
+            margin-top: 8px;
+        }
+
+        footer {
+            margin: 36px 0 24px;
+            text-align: center;
+            color: #777;
+            font-size: .95rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg"
+    style="background: linear-gradient(90deg, rgba(10, 4, 94, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%) !important; padding: 0.3rem 1rem;">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white d-flex align-items-center" href="#">
+            <img src="CarAuto.png" alt="Logo" width="30" height="30" class="me-2" />
+            Auto Car
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="./Prova.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="CarrosClasseA.html">Carros</a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link text-white" href="sobre.html">sobre nós</a>
+                </li>
+                <li class="nav-item"></li>
+                    <a class="nav-link text-white" href="formulario.html">Entre em contato</a>
+                </li>
+                    </ul>
+                </li>
+               
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search" />
+                <button class="btn btn-outline-light" type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Menu de carros</h1>
+    </header>
+
+    <main class="container py-4">
+        <!-- Carros esportivos -->
+        <h2 class="section-title">Carros esportivos</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Lamborghini-->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://nxboats.com.br/wp-content/uploads/2023/11/marcas-de-carros-de-luxo-lamborghini.jpg"
+                        alt="Lamborghini">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Lamborghini</h5>
+                        <p class="desc mb-0">Superesportivo com motor V12, design extremo e aceleração brutal. Um dos
+                            modelos mais icônicos da marca, com portas em estilo “tesoura” e som inconfundível. É feito
+                            para performance e impacto visual.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalLamborghini">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferrari -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://nxboats.com.br/wp-content/uploads/2023/11/marcas-de-carros-de-luxo-ferrari.jpg"
+                        alt="Ferrari">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Ferrari</h5>
+                        <p class="desc mb-0">Coupé esportivo com motor V12 dianteiro, altíssimo desempenho e
+                            comportamento refinado. Combina luxo italiano com performance de pista. Um dos últimos
+                            modelos com motor aspirado da marca.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalFerrari">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bugatti -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://nxboats.com.br/wp-content/uploads/2023/11/marcas-de-carros-de-luxo-bugatti.jpg"
+                        alt="Bugatti">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Bugatti</h5>
+                        <p class="desc mb-0">Hiperesportivo com motor W16 quadriturbo, mais de 1.500 cv e velocidade
+                            máxima acima dos 400 km/h. Um dos carros mais rápidos e caros do mundo, com acabamento de
+                            luxo absoluto e produção limitada.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalBugatti">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Maserati -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://nxboats.com.br/wp-content/uploads/2023/11/marcas-de-carros-de-luxo-maserati.jpg"
+                        alt="Maserati">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Maserati</h5>
+                        <p class="desc mb-0">Sedã de luxo italiano com estilo esportivo. Oferece desempenho forte (V6 ou
+                            V8), conforto e elegância. É mais discreto que os esportivos puros, mas mantém o DNA
+                            esportivo da marca.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalMaserati">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carros de luxo -->
+        <h2 class="section-title">Carros não esportivos</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Carro 1 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb"
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkcgkOvr6_facgaEgGk2puAKmDj1BpUt4D5mAMveUK931vmW8oxvfZ3DavYVSuPPjPbWWeqDGzSGR21fjYw0G1nfi52QXNqZVaWnfZ1v-jgquj09CnvlbEJB8RxbPNJ4RyWNlEEM7eO8sx/s1600/ClasseSCoupe+(6).jpg"
+                        alt="Carro 1">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Mercedes-Benz Classe S</h5>
+                        <p class="desc mb-0">Sedã de luxo referência mundial em conforto e tecnologia. Tem suspensão
+                            adaptativa, interior espaçoso e materiais de altíssima qualidade. Um dos carros mais usados
+                            por chefes de estado e executivos no mundo.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalCarro1">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carro 2 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb" src="https://cdn.motor1.com/images/mgl/9mmZv0/s4/2022-bmw-7er.webp"
+                        alt="Carro 2">
+                    <div class="card-body">
+
+                        <h5 class="card-title">BMW Série 7</h5>
+                        <p class="desc mb-0">Sedã grande da BMW, combina luxo refinado com foco na dirigibilidade.
+                            Possui tecnologias avançadas de condução semiautônoma e motorização potente (inclusive
+                            versões híbridas e elétricas). Interior sofisticado e minimalista.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalCarro2">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carro 3 -->
+            <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
+                <div class="card sbx w-100">
+                    <img class="thumb" src="https://cdn.motor1.com/images/mgl/8QMwo/s4/2022-audi-a8-l.webp"
+                        alt="Carro 3">
+                    <div class="card-body">
+
+                        <h5 class="card-title">Audi A8</h5>
+                        <p class="desc mb-0">Sedã topo de linha da Audi, com estilo discreto e interior
+                            ultratecnológico. Oferece tração integral quattro, excelente conforto de rodagem e sistemas
+                            avançados de assistência ao motorista. Ideal para quem valoriza luxo com discrição.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#modalCarro3">
+                            Saiba mais
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p class="sbx-note">Imagens ilustrativas. Os itens podem variar por loja e disponibilidade.</p>
+    </main>
+
+    <footer>
+        <p>&copy; @ 2025 AUTO CAR Company. Todos os direitos reservados.</p>
+        
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Prova.html">Inicío</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="CarrosClasseA.html">Carros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobre.html">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="formulario.html">Entre em contato</a>
+              </li>
+          </ul>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Modal Lamborghini -->
+    <div class="modal fade" id="modalLamborghini" tabindex="-1" aria-labelledby="modalLamborghiniLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalLamborghiniLabel">Lamborghini</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <ul> <li>
+                    <strong>Preço:</strong><br />
+                    R$4.200.000
+                </li>
+                <li>
+                    <strong>Estoque:</strong><br />
+                    Sim
+                </li></ul>
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ferrari -->
+    <div class="modal fade" id="modalFerrari" tabindex="-1" aria-labelledby="modalFerrariLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalFerrariLabel">Ferrari</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul> <li>
+                        <strong>Preço:</strong><br />
+                        R$3.800.000
+                    </li>
+                    <li>
+                        <strong>Estoque:</strong><br />
+                        Não
+                    </li></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bugatti -->
+    <div class="modal fade" id="modalBugatti" tabindex="-1" aria-labelledby="modalBugattiLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalBugattiLabel">Bugatti</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul> <li>
+                        <strong>Preço:</strong><br />
+                        R$18.000.000
+                    </li>
+                    <li>
+                        <strong>Estoque:</strong><br />
+                        Sim
+                    </li></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Maserati -->
+    <div class="modal fade" id="modalMaserati" tabindex="-1" aria-labelledby="modalMaseratiLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalMaseratiLabel">Maserati</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul> <li>
+                        <strong>Preço:</strong><br />
+                        R$1.200.000
+                    </li>
+                    <li>
+                        <strong>Estoque:</strong><br />
+                        Sim
+                    </li></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Carro 1 -->
+    <div class="modal fade" id="modalCarro1" tabindex="-1" aria-labelledby="modalCarro1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalCarro1Label">Carro 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul> <li>
+                        <strong>Preço:</strong><br />
+                        R$1.050.000
+                    </li>
+                    <li>
+                        <strong>Estoque:</strong><br />
+                        Sim
+                    </li></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Carro 2 -->
+    <div class="modal fade" id="modalCarro2" tabindex="-1" aria-labelledby="modalCarro2Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalCarro2Label">Carro 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul> <li>
+                        <strong>Preço:</strong><br />
+                        R$990.000
+                    </li>
+                    <li>
+                        <strong>Estoque:</strong><br />
+                        Não
+                    </li></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Carro 3 -->
+    <div class="modal fade" id="modalCarro3" tabindex="-1" aria-labelledby="modalCarro3Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalCarro3Label">Carro 3</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul> <li>
+                        <strong>Preço:</strong><br />
+                        R$970.000
+                    </li>
+                    <li>
+                        <strong>Estoque:</strong><br />
+                        Sim
+                    </li></ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
